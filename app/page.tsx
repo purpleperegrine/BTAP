@@ -55,7 +55,7 @@ const pizzaClassics: MenuItem[] = [
   {
     name: "Calzone",
     price: "16",
-    description: "Two toppings with marinara on the side",
+    description: "Two toppings with marinara on the side<br>2.50 for each topping",
   },
 ];
 
