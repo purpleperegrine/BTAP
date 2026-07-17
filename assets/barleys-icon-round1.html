@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barley's — Icon, Round 1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F6F2E9;
+    --ink:#35363A;
+    --ink-soft:#6E6A61;
+    --rule:#D9D2C2;
+    --red:#CB262C;
+    --gold:#FBBF13;
+    --coal:#26272B;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  .sheet{max-width:660px;margin:0 auto;padding:36px 22px 64px}
+  .eyebrow{
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+    font-size:11px;letter-spacing:.18em;color:var(--ink-soft);
+    text-transform:uppercase;
+  }
+  h1{
+    font-family:'Alfa Slab One','Rockwell',serif;
+    font-weight:400;font-size:clamp(34px,9vw,52px);
+    line-height:1.05;margin:10px 0 12px;letter-spacing:.01em;
+  }
+  .dek{color:var(--ink-soft);font-size:15px;max-width:46ch}
+  section{margin-top:44px;padding-top:18px;border-top:1px solid var(--rule)}
+  .label{
+    font-family:'Alfa Slab One','Rockwell',serif;font-weight:400;
+    font-size:15px;letter-spacing:.06em;text-transform:uppercase;
+    margin-bottom:18px;
+  }
+  .label small{
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+    font-size:10px;letter-spacing:.14em;color:var(--ink-soft);margin-left:10px;
+  }
+
+  /* hero */
+  .hero{display:flex;justify-content:center;padding:22px 0 8px}
+  .hero svg{width:min(66vw,264px);height:auto;filter:drop-shadow(0 10px 22px rgba(53,54,58,.16))}
+
+  /* proof strip */
+  .strip{
+    display:flex;align-items:flex-end;justify-content:space-between;
+    gap:8px;padding:20px 4px 12px;border-top:2px solid var(--ink);
+    border-bottom:2px solid var(--ink);
+  }
+  .step{display:flex;flex-direction:column;align-items:center;gap:9px;flex:0 1 auto}
+  .step svg{display:block}
+  .tick{
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+    font-size:10px;letter-spacing:.06em;color:var(--ink);
+  }
+  .use{
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+    font-size:9px;letter-spacing:.04em;color:var(--ink-soft);
+  }
+  .footnote{margin-top:12px;font-size:12.5px;color:var(--ink-soft);max-width:56ch}
+  .footnote b{color:var(--ink);font-weight:600}
+
+  /* color modes */
+  .modes{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+  .chip{
+    border:1px solid var(--rule);border-radius:10px;
+    padding:26px 12px 14px;display:flex;flex-direction:column;
+    align-items:center;gap:14px;
+  }
+  .chip svg{width:96px;height:96px}
+  .chip.dark{background:var(--coal);border-color:var(--coal)}
+  .chip .tick{text-align:center}
+  .chip.dark .tick{color:#B9B5AC}
+
+  /* change log */
+  .log{display:flex;flex-direction:column}
+  .row{
+    display:grid;grid-template-columns:118px 1fr;gap:14px;
+    padding:11px 0;border-bottom:1px dashed var(--rule);
+    font-size:13.5px;
+  }
+  .row:last-child{border-bottom:none}
+  .row .k{
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+    font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+    color:var(--ink-soft);padding-top:2px;
+  }
+  .next{font-size:13.5px;color:var(--ink-soft)}
+  .next b{color:var(--ink);font-weight:600}
+  @media (max-width:420px){
+    .step:nth-child(2){display:none} /* drop 64px step on tiny screens so the strip breathes */
+  }
+</style>
+</head>
+<body>
+
+<!-- One badge definition, themed per instance via CSS custom properties -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <path id="grain" d="M 0 0 C -8 -6 -10 -18 -6 -27 C -3 -32 3 -32 6 -27 C 10 -18 8 -6 0 0 Z"/>
+    <symbol id="badge" viewBox="0 0 512 512">
+      <circle cx="256" cy="256" r="248" fill="var(--disc,#CB262C)"/>
+      <circle cx="256" cy="256" r="240" fill="none" stroke="var(--edge,transparent)" stroke-width="16"/>
+      <circle cx="256" cy="256" r="215" fill="none" stroke="var(--line,#FBBF13)" stroke-width="16"/>
+      <g stroke="var(--line,#FBBF13)" stroke-width="11" stroke-linecap="round" fill="none">
+        <path d="M 288 368 Q 226 314 204 250"/>
+        <path d="M 224 368 Q 288 310 312 242"/>
+      </g>
+      <g transform="translate(204 252) rotate(-15)" fill="var(--line,#FBBF13)">
+        <line x1="0" y1="8" x2="0" y2="-86" stroke="var(--line,#FBBF13)" stroke-width="7" stroke-linecap="round"/>
+        <use href="#grain" transform="translate(-5 2) rotate(-38)"/>
+        <use href="#grain" transform="translate(5 2) rotate(38)"/>
+        <use href="#grain" transform="translate(-5 -28) rotate(-34)"/>
+        <use href="#grain" transform="translate(5 -28) rotate(34)"/>
+        <use href="#grain" transform="translate(-5 -56) rotate(-30)"/>
+        <use href="#grain" transform="translate(5 -56) rotate(30)"/>
+        <use href="#grain" transform="translate(0 -82)"/>
+        <g stroke="var(--line,#FBBF13)" stroke-width="6" stroke-linecap="round">
+          <line x1="-6" y1="-96" x2="-25" y2="-156"/>
+          <line x1="0" y1="-100" x2="0" y2="-164"/>
+          <line x1="6" y1="-96" x2="25" y2="-156"/>
+        </g>
+      </g>
+      <g transform="translate(312 240) rotate(20) scale(1.15)">
+        <path fill="var(--line,#FBBF13)" d="M 0 -98 C 20 -88 38 -62 38 -32 C 38 -4 22 10 0 10 C -22 10 -38 -4 -38 -32 C -38 -62 -20 -88 0 -98 Z"/>
+        <g stroke="var(--cut,#CB262C)" stroke-width="7" stroke-linecap="round" fill="none">
+          <line x1="0" y1="-92" x2="0" y2="6"/>
+          <path d="M -32 -18 Q 0 -36 32 -18"/>
+          <path d="M -26 -48 Q 0 -64 26 -48"/>
+          <path d="M -16 -74 Q 0 -86 16 -74"/>
+        </g>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="sheet">
+
+  <header>
+    <div class="eyebrow">Barley's refresh · Round 1 · Icon</div>
+    <h1>The icon.</h1>
+    <p class="dek">Crossed barley &amp; hop, redrawn flat. One keyline, zero hairlines, two inks. Built at the hardest sizes first — everything larger inherits.</p>
+  </header>
+
+  <section>
+    <div class="label">Hero <small>512 grid</small></div>
+    <div class="hero">
+      <svg viewBox="0 0 512 512" role="img" aria-label="Barley's icon"><use href="#badge"/></svg>
+    </div>
+  </section>
+
+  <section>
+    <div class="label">Proof strip <small>does it survive?</small></div>
+    <div class="strip">
+      <div class="step"><svg width="112" height="112" viewBox="0 0 512 512"><use href="#badge"/></svg><span class="tick">128</span><span class="use">app icon</span></div>
+      <div class="step"><svg width="64" height="64" viewBox="0 0 512 512"><use href="#badge"/></svg><span class="tick">64</span><span class="use">avatar</span></div>
+      <div class="step"><svg width="48" height="48" viewBox="0 0 512 512"><use href="#badge"/></svg><span class="tick">48</span><span class="use">pin</span></div>
+      <div class="step"><svg width="32" height="32" viewBox="0 0 512 512"><use href="#badge"/></svg><span class="tick">32</span><span class="use">favicon</span></div>
+      <div class="step"><svg width="16" height="16" viewBox="0 0 512 512"><use href="#badge"/></svg><span class="tick">16</span><span class="use">tab</span></div>
+    </div>
+    <p class="footnote"><b>Embroidery check:</b> on a 3.5&Prime; chest hit, the thinnest element (awn) lands at ≈1.0&nbsp;mm — right at the satin-stitch floor. A digitizer can bump awns to 1.2&nbsp;mm without redrawing anything else. Nothing else comes close to the limit.</p>
+  </section>
+
+  <section>
+    <div class="label">Color modes <small>print &amp; screen</small></div>
+    <div class="modes">
+      <div class="chip" style="--disc:#CB262C;--line:#FBBF13;--cut:#CB262C;--edge:transparent">
+        <svg viewBox="0 0 512 512"><use href="#badge"/></svg>
+        <span class="tick">full color · 2 inks</span>
+      </div>
+      <div class="chip" style="--disc:transparent;--line:#35363A;--cut:#F6F2E9;--edge:#35363A">
+        <svg viewBox="0 0 512 512"><use href="#badge"/></svg>
+        <span class="tick">one-color · charcoal</span>
+      </div>
+      <div class="chip dark" style="--disc:transparent;--line:#FFFFFF;--cut:#26272B;--edge:#FFFFFF">
+        <svg viewBox="0 0 512 512"><use href="#badge"/></svg>
+        <span class="tick">reversed · knockout</span>
+      </div>
+    </div>
+    <p class="footnote">The one-color versions are what the screen printer and embroiderer will actually ask for. Same geometry, recolored — no separate art to maintain.</p>
+  </section>
+
+  <section>
+    <div class="label">What changed <small>vs. 2005</small></div>
+    <div class="log">
+      <div class="row"><span class="k">Container</span><span>Oval → circle. Avatar frames, app icons, and pins are all circular now; the oval wasted the canvas.</span></div>
+      <div class="row"><span class="k">Keylines</span><span>Three stacked strokes → one gold ring. The outline-inside-outline construction was the loudest 2005 tell.</span></div>
+      <div class="row"><span class="k">Illustration</span><span>Redrawn from ~dozens of hairline paths to ~20 flat elements. Detail now lives in negative-space cuts, which fade gracefully instead of turning to mud.</span></div>
+      <div class="row"><span class="k">Palette</span><span>Icon tier runs 2 inks (red <code>#CB262C</code> / gold <code>#FBBF13</code>). Amber and charcoal rejoin at the lockup tier.</span></div>
+      <div class="row"><span class="k">Motif</span><span>Kept. Barley + hop is the equity — same story, same colors, same crossing, one generation newer.</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="label">Next</div>
+    <p class="next"><b>Round 2:</b> the stacked and full lockups — BARLEY'S in a heavy slab over the badge, TAPROOM &amp; PIZZERIA unified into the same family. The heading font on this sheet (Alfa Slab One, open license, $0) is my opening candidate for the wordmark. Judge it while you're here.</p>
+  </section>
+
+</div>
+</body>
+</html>
