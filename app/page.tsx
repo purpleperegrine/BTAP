@@ -182,7 +182,7 @@ export default function Home() {
         <div className="nav-shell">
           <a className="brand-lockup" href="#top" aria-label="Barley's home">
             <img
-              src="/assets/barleysICON.png"
+              src="/barleysICON.png"
               width="1200"
               height="889"
               alt="Barley’s Taproom & Pizzeria"
@@ -240,7 +240,7 @@ export default function Home() {
             <div className="hero-media" aria-label="Pizza photo placeholder">
               <div className="hero-photo-frame">
                 <img
-                  src="/public/carribbean.jpg"
+                  src="/carribbean.jpg"
                   width="1200"
                   height="800"
                   alt="Placeholder photo of a specialty pizza"
