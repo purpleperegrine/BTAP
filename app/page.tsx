@@ -232,7 +232,7 @@ export default function Home() {
               </a>
               <ul className="hero-facts" aria-label="Barley's highlights">
                 <li>Family-friendly</li>
-                <li>Live music</li>
+                <li>Live Music</li>
                 <li>Downtown Spindale</li>
               </ul>
             </div>
@@ -251,7 +251,7 @@ export default function Home() {
                 <strong>Hot pies</strong>
                 <span>Cold pints</span>
               </div>
-              <p className="hero-caption">Where suit &amp; tie meet tie-dye.</p>
+              <p className="hero-caption">Where suit &amp; tie meets tie-dye.</p>
             </div>
           </div>
         </section>
