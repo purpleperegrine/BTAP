@@ -60,7 +60,7 @@ const pizzaClassics: MenuItem[] = [
 ];
 
 const starters: MenuItem[] = [
-  { name: "Wings", price: "10" },
+  { name: "Wings!", price: "10" },
   { name: "Fiddlesticks", price: "9" },
   { name: "Garlic knots", price: "½ dozen 6 · dozen 10" },
   { name: "Bruschetta", price: "10" },
@@ -87,33 +87,33 @@ const pastasAndMains: MenuItem[] = [
 ];
 
 const sandwiches: MenuItem[] = [
-  { name: "Beef burger", price: "12" },
-  { name: "Black bean burger", price: "12" },
-  { name: "BBQ chicken", price: "12" },
-  { name: "Chicken parmesan", price: "12" },
-  { name: "Chicken sandwich", price: "12" },
-  { name: "Chicken wrap", price: "12" },
-  { name: "Steak & cheese", price: "13" },
+  { name: "Beef Burger", price: "12" },
+  { name: "Black Bean Burger", price: "12" },
+  { name: "BBQ Chicken", price: "12" },
+  { name: "Chicken Parmesan", price: "12" },
+  { name: "Chicken Sandwich", price: "12" },
+  { name: "Chicken Wrap", price: "12" },
+  { name: "Steak & Cheese", price: "13" },
   { name: "Turkey", price: "13" },
   { name: "Reuben", price: "14" },
-  { name: "Jerk tofu", price: "12" },
+  { name: "Jerk Tofu", price: "12" },
   { name: "Meatball", price: "12" },
-  { name: "Veggie sandwich", price: "12" },
-  { name: "Veggie wrap", price: "12" },
+  { name: "Veggie Sandwich", price: "12" },
+  { name: "Veggie Wrap", price: "12" },
   { name: "Burger of the Month", price: "14" },
 ];
 
 const kidsPasta: MenuItem[] = [
-  { name: "Butter noodles", price: "4" },
+  { name: "Butter Noodles", price: "4" },
   { name: "Fettuccine Alfredo", price: "7" },
   { name: "Spaghetti", price: "7" },
-  { name: "Spaghetti & meatball", price: "8" },
+  { name: "Spaghetti & Meatball", price: "8" },
   { name: "Pasta Prima", price: "8" },
-  { name: "Voodoo chicken pasta", price: "8" },
+  { name: "Voodoo Chicken Pasta", price: "8" },
 ];
 
 const sweets: MenuItem[] = [
-  { name: "Ice cream", price: "2" },
+  { name: "Ice Cream", price: "2" },
   { name: "Brownie", price: "6" },
   { name: "Cheesecake", price: "6" },
   { name: "Lemon mascarpone", price: "8" },
@@ -182,7 +182,7 @@ export default function Home() {
         <div className="nav-shell">
           <a className="brand-lockup" href="#top" aria-label="Barley's home">
             <img
-              src="/barleys-logo.png"
+              src="/assets/barleysICON.png"
               width="1200"
               height="889"
               alt="Barley’s Taproom & Pizzeria"

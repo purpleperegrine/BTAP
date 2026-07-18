@@ -15,18 +15,18 @@ Edit locally -> preview and test -> commit -> push -> pull on server
 
 ## 1. Current project and hosting setup
 
-| Item | Current value |
-| --- | --- |
-| Local project | `/Users/jakedavis/Desktop/BTAP` |
-| Production project | `/var/www/btap` |
-| Runtime | Node.js 24.18.0 on the server |
-| Minimum supported Node.js | 22.13.0, as declared in `package.json` |
-| Framework | Next.js App Router, React, and vinext |
-| Production process | `barleys.service` under systemd |
-| App listener | `127.0.0.1:3000` |
-| Reverse proxy | Nginx on `127.0.0.1:8080` |
-| Public routing | Existing Cloudflare Tunnel |
-| Public test domains | `dankjavis.com` and `www.dankjavis.com` |
+| Item                      | Current value                               |
+| ------------------------- | ------------------------------------------- |
+| Local project             | `/Users/jakedavis/Desktop/BTAP`           |
+| Production project        | `/var/www/btap`                           |
+| Runtime                   | Node.js 24.18.0 on the server               |
+| Minimum supported Node.js | 22.13.0, as declared in`package.json`     |
+| Framework                 | Next.js App Router, React, and vinext       |
+| Production process        | `barleys.service` under systemd           |
+| App listener              | `127.0.0.1:3000`                          |
+| Reverse proxy             | Nginx on`127.0.0.1:8080`                  |
+| Public routing            | Existing Cloudflare Tunnel                  |
+| Public test domains       | `dankjavis.com` and `www.dankjavis.com` |
 
 The application’s scripts are defined in `package.json`:
 
@@ -402,18 +402,18 @@ system.
 
 ## 7. Updating other common content
 
-| Content | Location |
-| --- | --- |
-| Phone number and Facebook URL | Constants at the top of `app/page.tsx` |
-| Menu, prices, hours, and page copy | `app/page.tsx` |
-| Page title, description, and social metadata | `app/layout.tsx` |
-| Mobile navigation behavior | `app/MobileMenu.tsx` |
-| Global styles and image crops | `app/globals.css` |
-| Hero photo | `public/barleys-pizza.jpg` or its replacement |
-| Taproom photo | `public/barleys-taproom.jpg` |
-| Logo | `public/barleys-logo.png` |
-| Social card | `public/og.png` |
-| Build commands and dependencies | `package.json` and `package-lock.json` |
+| Content                                      | Location                                        |
+| -------------------------------------------- | ----------------------------------------------- |
+| Phone number and Facebook URL                | Constants at the top of`app/page.tsx`         |
+| Menu, prices, hours, and page copy           | `app/page.tsx`                                |
+| Page title, description, and social metadata | `app/layout.tsx`                              |
+| Mobile navigation behavior                   | `app/MobileMenu.tsx`                          |
+| Global styles and image crops                | `app/globals.css`                             |
+| Hero photo                                   | `public/barleys-pizza.jpg` or its replacement |
+| Taproom photo                                | `public/barleys-taproom.jpg`                  |
+| Logo                                         | `public/barleys-logo.png`                     |
+| Social card                                  | `public/og.png`                               |
+| Build commands and dependencies              | `package.json` and `package-lock.json`      |
 
 The current live-music section intentionally sends visitors to Facebook for the
 latest schedule. That avoids showing stale band dates. If events are later
