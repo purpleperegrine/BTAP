@@ -214,7 +214,7 @@ export default function Home() {
           <div className="hero-grid page-shell">
             <div className="hero-copy">
               <p className="eyebrow">
-                <span aria-hidden="true" /> Spindale, North Carolina · Since 2006
+                <span aria-hidden="true" /> Spindale, NC · Since 2006
               </p>
               <h1 id="hero-title">
                 Pizza, pints <em>&amp;</em> a good night out.
