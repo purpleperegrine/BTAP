@@ -240,7 +240,7 @@ export default function Home() {
             <div className="hero-media" aria-label="Pizza photo placeholder">
               <div className="hero-photo-frame">
                 <img
-                  src="/barleys-pizza.jpg"
+                  src="/assets/carribbean.jpg"
                   width="1200"
                   height="800"
                   alt="Placeholder photo of a specialty pizza"
@@ -266,7 +266,7 @@ export default function Home() {
                 <h2 id="food-title">Food worth coming back for.</h2>
               </div>
               <p>
-                Start with a specialty pie, stay for a taproom classic, and save
+                Start with a pie, stay for the vibes, and save
                 room for something sweet.
               </p>
             </div>
