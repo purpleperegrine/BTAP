@@ -194,7 +194,7 @@ export default function Home() {
           <nav className="desktop-nav" aria-label="Primary navigation">
             <a href="#food-menu">Food</a>
             <a href="#beer-menu">Beer</a>
-            <a href="#live-music">Live music</a>
+            <a href="#live-music">ALive music</a>
             <a href="#visit">Visit</a>
           </nav>
 
