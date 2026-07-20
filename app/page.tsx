@@ -108,6 +108,7 @@ const kidsPasta: MenuItem[] = [
   { name: "Butter Noodles", price: "4" },
   { name: "Fettuccine Alfredo", price: "7" },
   { name: "Spaghetti", price: "7" },
+  { name: "Baked Spaghetti", price: "10" },
   { name: "Spaghetti & Meatball", price: "8" },
   { name: "Pasta Prima", price: "8" },
   { name: "Voodoo Chicken Pasta", price: "8" },
