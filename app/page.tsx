@@ -250,10 +250,10 @@ export default function Home() {
                 />
               </div>
               <div className="oven-badge" aria-hidden="true">
-                <strong>Hot pies</strong>
+                <strong>Hot Pies</strong>
                 <span>Cold pints</span>
               </div>
-              <p className="hero-caption">Where suit &amp; tie meets tie-dye.</p>
+              <p className="hero-caption">Suit &amp; Tie meets Tie-Dye.</p>
             </div>
           </div>
         </section>
