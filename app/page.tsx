@@ -21,28 +21,28 @@ const specialtyPizzas: MenuItem[] = [
   },
   {
     name: "The Meat",
-    price: "M 24 · L 28",
+    price: "M 24 · L 30",
     description: "Pepperoni, Italian sausage, bacon, ham & beef",
   },
   {
     name: "The Veggie",
-    price: "M 24 · L 28",
+    price: "M 24 · L 30",
     description: "Spinach, mushroom, onion, broccoli & tomato",
   },
   {
     name: "The Greek",
-    price: "M 24 · L 28",
+    price: "M 24 · L 30",
     description: "Spinach, black olive, feta, onion & sun-dried tomato",
   },
   {
     name: "The Caribbean",
-    price: "M 24 · L 28",
+    price: "M 24 · L 30",
     description:
       "Jerk chicken, artichoke, onion, spinach & olive oil — no sauce",
   },
   {
     name: "Pizza of the Month",
-    price: "Tiny 15 · M 24 · L 28",
+    price: "Tiny 15 · M 24 · L 30",
     description: "Ask what’s coming hot out of the oven this month",
   },
 ];
