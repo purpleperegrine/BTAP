@@ -88,6 +88,7 @@ const pastasAndMains: MenuItem[] = [
 
 const sandwiches: MenuItem[] = [
   { name: "Beef Burger", price: "12" },
+  { name: "Italian Sub", price: "10" },
   { name: "Black Bean Burger", price: "12" },
   { name: "BBQ Chicken", price: "12" },
   { name: "Chicken Parmesan", price: "12" },
