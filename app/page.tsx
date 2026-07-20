@@ -242,7 +242,7 @@ export default function Home() {
             <div className="hero-media" aria-label="Pizza photo placeholder">
               <div className="hero-photo-frame">
                 <img
-                  src="/carribbean.jpg"
+                  src="/public/barleys-roni.jpg"
                   width="1200"
                   height="800"
                   alt="Placeholder photo of a specialty pizza"
