@@ -14,7 +14,7 @@ type MenuItem = {
 
 const specialtyPizzas: MenuItem[] = [
   {
-    name: "Barley’s",
+    name: "Barleys",
     price: "M 24 · L 30",
     description:
       "Pepperoni, Italian sausage, green bell pepper, mushrooms & onion",
