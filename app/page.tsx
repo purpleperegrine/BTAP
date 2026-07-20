@@ -21,28 +21,28 @@ const specialtyPizzas: MenuItem[] = [
   },
   {
     name: "The Meat",
-    price: "M 24 · L 30",
+    price: "M 24 · L 28",
     description: "Pepperoni, Italian sausage, bacon, ham & beef",
   },
   {
     name: "The Veggie",
-    price: "M 24 · L 30",
+    price: "M 24 · L 28",
     description: "Spinach, mushroom, onion, broccoli & tomato",
   },
   {
     name: "The Greek",
-    price: "M 24 · L 30",
+    price: "M 24 · L 28",
     description: "Spinach, black olive, feta, onion & sun-dried tomato",
   },
   {
     name: "The Caribbean",
-    price: "M 24 · L 30",
+    price: "M 24 · L 28",
     description:
       "Jerk chicken, artichoke, onion, spinach & olive oil — no sauce",
   },
   {
     name: "Pizza of the Month",
-    price: "Tiny 15 · M 24 · L 30",
+    price: "Tiny 15 · M 24 · L 28",
     description: "Ask what’s coming hot out of the oven this month",
   },
 ];
@@ -242,7 +242,7 @@ export default function Home() {
             <div className="hero-media" aria-label="Pizza photo placeholder">
               <div className="hero-photo-frame">
                 <img
-                  src="/public/barleys-roni.jpg"
+                  src="/carribbean.jpg"
                   width="1200"
                   height="800"
                   alt="Placeholder photo of a specialty pizza"
@@ -319,7 +319,7 @@ export default function Home() {
                   <span className="menu-number">04</span>
                   <div>
                     <p className="panel-kicker">From the kitchen</p>
-                    <h2>Pasta &amp; Entrees</h2>
+                    <h2>Pasta &amp; mains</h2>
                   </div>
                 </div>
                 <MenuList items={pastasAndMains} />
